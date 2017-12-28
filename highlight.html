@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Highlight Search Text Using jQuery</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="jquitelight.js"></script>
+    <script>
+        function OnchangeHeilight() {
+            var data = $("#IN1").val();
+			var data2 = $("#IN2").val();
+			var data3 = $("#IN3").val();
+			var data4 = $("#IN4").val();
+			var data5 = $("#IN5").val();
+			var data6 = $("#IN6").val();
+			var data7 = $("#IN7").val();
+			var data8 = $("#IN8").val();
+			var data9 = $("#IN9").val();
+			var data10 = $("#IN10").val();
+			var data11 = $("#IN11").val();
+			var data12 = $("#IN12").val();
+			var data13 = $("#IN13").val();
+			var data14 = $("#IN14").val();
+			var data15 = $("#IN15").val();
+			var data16 = $("#IN16").val();
+			var dataKey1 = $("#OUTKEY1").val();
+			var dataKey2 = $("#OUTKEY2").val();
+			var dataKey3 = $("#OUTKEY3").val();
+			var dataKey4 = $("#OUTKEY4").val();
+			var dataKey5 = $("#OUTKEY5").val();
+            $("span").removeClass("marked-text");
+            $("#txtContent").mark([data]);
+			$("#txtContent").mark([data2]);
+			$("#txtContent").mark([data3]);
+			$("#txtContent").mark([data4]);
+			$("#txtContent").mark([data5]);
+			$("#txtContent").mark([data6]);
+			$("#txtContent").mark([data7]);
+			$("#txtContent").mark([data8]);
+			$("#txtContent").mark([data9]);
+			$("#txtContent").mark([data10]);
+			$("#txtContent").mark([data11]);
+			$("#txtContent").mark([data12]);
+			$("#txtContent").mark([data13]);
+			$("#txtContent").mark([data14]);
+			$("#txtContent").mark([data15]);
+			$("#txtContent").mark([data16]);
+			$("#txtContent").mark([dataKey1]);
+			$("#txtContent").mark([dataKey2]);
+			$("#txtContent").mark([dataKey3]);
+			$("#txtContent").mark([dataKey4]);
+			$("#txtContent").mark([dataKey5]);
+        }
+    </script>
+    <style>
+        .marked-text {
+            background-color: yellow;
+            font-weight: bold;
+            padding: 0 5px;
+            color: #000;
+            font-weight: 300;
+        }
+		
+		
+    </style>
+</head>
+<body>
+    search Text: <input type="text" id="txtData" onchange="javascript: OnchangeHeilight();" />
+    <br /><br />
+    <div id="txtContent" style="width:1024px;border:1px solid black;">
+    <table border="1" >
+		<!--2-1  機密-->
+		<tr>
+			<td align="center">2-1 二星呆殼</td><td align="center">鯉魚王</td> 		<td align="center">喇叭芽</td> 		<td align="center">鴨嘴火龍</td> 	<td align="center">黏黏寶</td>
+			<td align="center">水曜魚</td> 	 	<td align="center">花蓓蓓</td> 		<td align="center">卡蒂狗</td> 	    <td align="center">火雉雞</td> 		<td align="center">花蓓蓓</td> 	
+			<td align="center">齒輪兒</td>  	<td align="center"><font color="red">三星大嘴娃娃</font></td> 	<td align="center">勇士雄鷹</td>	<td align="center">好啦魷</td> 		<td align="center">電擊獸</td> 		
+			<td align="center">木守宮</td>  	<td align="center">二星大嘴娃娃 	<td align="center">二星雷吉</td> 	<td align="center">二星巨沼</td> 	<td align="center">鴨嘴火龍</td> 	
+			<td align="center"><font color="green">金鯉魚王</font></td> 			<td align="center">大舌貝</td>      <td align="center">二星黑龍</td>	<td align="center">火雉雞</td> 		<td align="center"><font color="blue">三星大鋼蛇</font></td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center">勇士雄鷹</td>	<td align="center">喇叭芽</td> 		<td align="center">單首龍</td>      <td align="center">飄飄球</td>  	<td align="center">咩利羊</td> 		
+			<td align="center">單首龍</td>		<td align="center">水曜魚</td> 		<td align="center">三蜜蜂</td> 		<td align="center">黏黏寶</td> 		<td align="center">雙倍多多冰</td> 
+			<td align="center">齒輪兒</td> 		<td align="center">六尾</td> 		<td align="center">電擊獸</td> 		<td align="center">木守宮</td> 		<td align="center">大舌貝</td> 		
+			<td align="center">龍頭地鼠</td> 	<td align="center"><font color="blue">三星詛咒</font></td> 	<td align="center">二星詛咒</td> 	<td align="center">二星大鋼蛇</td>  <td align="center">二星蜥蜴王</td> 
+			<td align="center">三蜜蜂</td> 		<td align="center">達摩狒狒</td> 	<td align="center">好啦魷</td> 		<td align="center">二星耿鬼</td> 	<td align="center">二星火焰雞</td> 
+		</tr>
+			<td>------</td>
+		<!--2-2 金-->
+		<tr>
+			<td align="center">2-2 鴨嘴火獸</td><td align="center">喇叭芽</td> 		<td align="center">雙倍多多冰</td> 	<td align="center">水曜魚</td> 	<td align="center">三蜜蜂</td>
+			<td align="center">咩利羊</td> 			<td align="center">好啦魷</td> 	    	<td align="center">電擊獸</td> 		<td align="center">火雉雞</td> 	 <td align="center">齒輪兒</td>
+			<td align="center">達摩狒狒</td>  	<td align="center">二星耿鬼</td> 			<td align="center"><font color="blue">三星耿鬼</font></td>			<td align="center">大舌貝</td> 		<td align="center">二星火焰雞</td> 		
+			<td align="center">勇士雄鷹</td>  			<td align="center">鯉魚王</td>		<td align="center">木守宮</td> 	<td align="center">飄飄球</td> 	<td align="center">三星蜥蜴王</td> 	
+			<td align="center">火雉雞</td> 			<td align="center">龍頭地鼠</td>     		<td align="center">木守宮</td>			<td align="center"><font color="blue">三星大鋼蛇</font></td> 		<td align="center">雙倍多多冰</td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center">喇叭芽</td> 		<td align="center">勇士雄鷹</td> 		<td align="center">二星呆殼獸</td>      <td align="center">鯉魚王</td>  	<td align="center">二星大鋼蛇</td> 		
+			<td align="center">大舌貝</td>		<td align="center">三蜜蜂</td> 		<td align="center"><font color="red">三星大嘴娃娃</font></td> 		<td align="center">卡蒂狗</td> 		 <td align="center" style="background-color:#FFA500;"><font color="white">酋雷姆</font></td>
+			<td align="center">二星詛咒</td> 		<td align="center">電擊獸</td> 		<td align="center">達摩狒狒</td> 		<td align="center">鴨嘴火獸</td> 		<td align="center">二星巨沼</td> 		
+			<td align="center">六尾</td> 		<td align="center">單首龍</td> 		<td align="center">六尾</td> 	<td align="center">好啦魷</td>  <td align="center">水曜魚</td> 
+			<td align="center">黏黏寶</td> 		<td align="center">二星大嘴娃娃</td> 		<td align="center">齒輪兒</td> 		<td align="center">二星蜥蜴王</td> 	<td align="center">花蓓蓓</td> 
+		</tr>
+		
+			<td>----</td>
+		
+		<!--2-3 黑洛-->
+		<tr>
+			<td align="center">2-3 咩利羊</td>		<td align="center">木守宮</td> 		<td align="center">花蓓蓓</td> 	<td align="center"><font color="blue">三星呆殼獸</font></td> 	<td align="center">齒輪兒</td>
+			<td align="center">木守宮</td> 	 	<td align="center"><font color="red">三星耿鬼</font></td> 			<td align="center">火雉雞</td> 	    	<td align="center">好啦魷</td> 		<td align="center">六尾</td> 	
+			<td align="center">勇士雄鷹</td>  		<td align="center">大舌貝</td> 			<td align="center">達摩狒狒</td>			<td align="center">卡蒂狗</td> 		<td align="center">雙倍多多冰</td> 		
+			<td align="center" style="background-color:black;"><font color="white">洛奇亞</font></td>  		<td align="center">飄飄球</td>					<td align="center">電擊獸</td> 	<td align="center"><font color="red">三星蜥蜴王</font></td> 	<td align="center">二星蜥蜴王</td> 	
+			<td align="center">二星巨沼</td> 		<td align="center">木守宮</td>     		<td align="center">勇士雄鷹</td>			<td align="center">龍頭地鼠</td> 		<td align="center">飄飄球</td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center"><font color="red">三星大嘴娃娃</font></td> 		<td align="center">卡蒂狗</td> 		<td align="center"><font color="red">三星火燄雞</font></td>      <td align="center">二星呆殼</td>  	<td align="center">喇叭芽</td> 		
+			<td align="center">鴨嘴火獸</td>		<td align="center">二星大嘴娃娃</td> 		<td align="center">黏黏寶</td> 		<td align="center">大舌貝</td> 		<td align="center">單首龍</td> 
+			<td align="center">咩利羊</td> 		<td align="center">水曜魚</td> 		<td align="center">六尾</td> 		<td align="center">齒輪兒</td> 		<td align="center">二星火焰雞</td> 		
+			<td align="center">雙倍多多冰</td> 		<td align="center">電擊獸</td> 		<td align="center">二星詛咒</td> 	<td align="center">達摩狒狒</td>  <td align="center">好啦魷</td> 
+			<td align="center">鯉魚王</td> 		<td align="center">三蜜蜂</td> 		<td align="center">單首龍</td> 		<td align="center">二星耿鬼</td> 	<td align="center">二星大鋼蛇</td> 
+		</tr>
+			<td>-----</td>
+		<!--2-4 黑鳳-->
+		<tr>
+			<td align="center">2-4黏黏寶</td>		<td align="center">二星呆殼獸</td> 		<td align="center">火雉雞</td> 	<td align="center">咩利羊</td> 	<td align="center">好啦魷</td>
+			<td align="center">勇士雄鷹</td> 	 	<td align="center">二星火焰雞</td> 			<td align="center"><font color="blue">三星呆殼獸</font></td> 	    	<td align="center">單首龍</td> 		<td align="center">鯉魚王</td> 	
+			<td align="center">齒輪兒</td>  		<td align="center">水曜魚</td> 			<td align="center">達摩狒狒</td>			<td align="center">木守宮</td> 		<td align="center">卡蒂狗</td> 		
+			<td align="center">水曜魚</td>  		<td align="center"><font color="blue">二星白龍</font></td>					<td align="center">花蓓蓓</td> 	<td align="center">六尾</td> 	<td align="center">電擊獸</td> 	
+			<td align="center">單首龍</td> 		<td align="center">飄飄球</td>     		<td align="center"><font color="blue">三星蜥蜴王</font></td>			<td align="center">火雉雞</td> 		<td align="center">鴨嘴火獸</td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center">雙倍多多冰</td> 		<td align="center">六尾</td> 		<td align="center">二星耿鬼</td>      <td align="center">二星大鋼蛇</td>  	<td align="center">二星巨沼</td> 		
+			<td align="center">二星蜥蜴王</td>		<td align="center">雙倍多多冰</td> 		<td align="center" style="background-color:black;"><font color="white">鳳凰</font></td>  		<td align="center"><font color="red">二星黑龍</font></td> 		<td align="center">黏黏寶</td> 
+			<td align="center">勇士雄鷹</td> 		<td align="center">鯉魚王</td> 		<td align="center">三蜜蜂</td> 		<td align="center">卡蒂狗</td> 		<td align="center">二星大嘴娃娃</td> 		
+			<td align="center">龍頭地鼠</td> 		<td align="center">咩利羊</td> 		<td align="center">大舌貝</td> 	<td align="center"><font color="red">三星火燄雞</font></td>  <td align="center">二星詛咒</td> 
+			<td align="center">達摩狒狒</td> 		<td align="center">二星雷吉</td> 		<td align="center">好啦魷</td> 		<td align="center">喇叭芽</td> 	<td align="center">電擊獸</td> 
+		</tr>
+				<td>----</td>
+		<!--2-5 四星白龍-->
+		<tr>
+			<td align="center">2-5咩利羊</td>		<td align="center">火雉雞</td> 		<td align="center">花蓓蓓</td> 	<td align="center"><font color="blue">三星巨沼</font></td> 	<td align="center">勇士雄鷹</td>
+			<td align="center"><font color="blue">二星白龍</font></td> 	 	<td align="center">齒輪兒</td> 			<td align="center">飄飄球</td> 	    	<td align="center">卡蒂狗</td> 		<td align="center">達摩狒狒</td> 	
+			<td align="center">黏黏寶</td>  	<td align="center">火雉雞</td>		<td align="center">二星詛咒</td>			<td align="center">三星呆殼獸</td> 		<td align="center">六尾</td> 		
+			<td align="center">喇叭芽</td>  		<td align="center">雙倍多多冰</td>				<td align="center">單首龍</td> 	<td align="center">咩利羊</td> 	<td align="center"><font color="red">二星黑龍</font></td> 	
+			<td align="center">水曜魚</td> 		<td align="center">喇叭芽</td>     		<td align="center">木守宮</td>			 <td align="center" style="background-color:#00FFCC;"><font color="white">四星白龍</font></td>	<td align="center">龍頭地鼠</td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center"><font color="red">三星火燄雞</font></td> 		<td align="center">二星大鋼蛇</td> 		<td align="center">二星耿鬼</td>      <td align="center">六尾</td>  	<td align="center">二星火焰雞</td> 		
+			<td align="center">二星巨沼</td>		<td align="center">飄飄球</td> 		<td align="center">達摩狒狒</td> 		<td align="center">二星呆殼</td> 		<td align="center">水曜魚</td> 
+			<td align="center">黏黏寶</td> 		<td align="center">電擊獸</td> 		<td align="center">二星蜥蜴王</td> 		<td align="center">火雉雞</td> 		<td align="center">雙倍多多冰</td> 		
+			<td align="center">大舌貝</td> 		<td align="center">二星雷吉</td> 		<td align="center">齒輪兒</td> 	<td align="center">鴨嘴火獸</td>  <td align="center">單首龍</td> 
+			<td align="center">鯉魚王</td> 		<td align="center">鯉魚王</td> 		<td align="center">好啦魷</td> 		<td align="center">三蜜蜂</td> 	<td align="center">二星大嘴娃娃</td> 
+		</tr>
+				<td>-----</td>
+		<!--2-6 四星黑龍-->
+		<tr>
+			<td align="center">2-6三蜜蜂</td>		<td align="center">鴨嘴火獸</td> 		<td align="center">花蓓蓓</td> 	<td align="center">大舌貝</td> 	<td align="center">黏黏寶</td>
+			<td align="center">二星耿鬼</td> 	 	<td align="center"><font color="blue">三星詛咒娃娃</font></td> 			<td align="center">木守宮</td> 	    	<td align="center">電擊獸</td> 		<td align="center">三蜜蜂</td> 	
+			<td align="center">黏黏寶</td>  		<td align="center">喇叭芽</td> 			<td align="center">二星蜥蜴王</td>			<td align="center">火雉雞</td> 		<td align="center">飄飄球</td> 		
+			<td align="center">咩利羊</td>  		<td align="center"><font color="red">二星白龍</font></td>			<td align="center">龍頭地鼠</td> 	<td align="center">咩利羊</td></td> 	<td align="center">六尾</td> 	
+			<td align="center">卡蒂狗</td> 		<td align="center">齒輪兒</td>     		<td align="center" style="background-color:#00FFCC;"><font color="white">四星黑龍</font></td> 				<td align="center">二星大鋼蛇</td> 		<td align="center">卡蒂狗</td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center">二星大嘴娃娃</td> 		<td align="center"><font color="red">三星巨沼</font></td> 		<td align="center"><font color="red">二星雷吉</font></td>   <td align="center">二星詛咒</td>    <td align="center">木守宮</td>  
+			<td align="center"><font color="red">二星黑龍</font></td>		    <td align="center">雙倍多多冰</td> 		<td align="center">飄飄球</td> 		<td align="center">鯉魚王</td> 		<td align="center">喇叭芽</td>  
+			<td align="center">大舌貝</td>	<td align="center">二星巨沼</td> 		<td align="center">二星火焰雞</td> 		<td align="center">水曜魚</td> 		<td align="center">二星呆殼獸</td> 			
+			<td align="center">鴨嘴火獸</td> 		<td align="center">鯉魚王</td> 		<td align="center">火雉雞</td> 	<td align="center">達摩狒狒</td>  <td align="center">勇士雄鷹</td> 
+			<td align="center"><font color="red">三星耿鬼</font></td> 		<td align="center">花蓓蓓</td> 		<td align="center">單首龍</td> 		<td align="center">好啦魷</td> 	<td align="center">齒輪兒</td> 
+		</tr>
+			<td>-----</td>
+		<!--2-7 四星雷吉-->
+		<tr>
+			<td align="center">2-7水曜魚</td>		<td align="center">好啦魷</td> 			<td align="center"><font color="blue">三星詛咒娃娃</font></td> 	<td align="center">大舌貝</td> 	<td align="center">喇叭芽</td>
+			<td align="center">鯉魚王</td> 	 	<td align="center">木守宮</td> 			<td align="center">水曜魚</td> 	    	<td align="center"><font color="red">二星白龍</font></td> 		<td align="center">咩利羊</td> 	
+			<td align="center">飄飄球</td>  		<td align="center">火雉雞</td> 			<td align="center">鴨嘴火獸</td>			<td align="center">二星大鋼蛇</td> 		 <td align="center" style="background-color:#00FFCC;"><font color="white">四星雷吉奇卡斯</font></td>		
+			<td align="center">二星詛咒</td>  		<td align="center">單首龍</td>			<td align="center">電擊獸</td> 	<td align="center">六尾</td> 	<td align="center">大舌貝</td> 	
+			<td align="center">二星巨沼</td> 		<td align="center">花蓓蓓</td>     		<td align="center"><font color="red">三星耿鬼</font></td>			<td align="center">花蓓蓓</td> 		<td align="center">齒輪兒</td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center">三蜜蜂</td> 		<td align="center">二星火焰雞</td> 		<td align="center">勇士雄鷹</td>      <td align="center">齒輪兒</td>  	<td align="center">達摩狒狒</td> 		
+			<td align="center">黏黏寶</td>		<td align="center">飄飄球</td> 		<td align="center">二星耿鬼</td> 		<td align="center">二星蜥蜴王</td> 		<td align="center">雙倍多多冰</td> 
+			<td align="center"><font color="blue">三星大鋼蛇</font></td> 		<td align="center">火雉雞</td> 		<td align="center">二星大嘴娃娃</td> 		<td align="center">鯉魚王</td> 		<td align="center">龍頭地鼠</td> 		
+			<td align="center">喇叭芽</td> 		<td align="center">咩利羊</td> 		<td align="center">卡蒂狗</td> 	<td align="center"><font color="blue">三星巨沼</font></td>  <td align="center">木守宮</td> 
+			<td align="center">好啦魷</td> 		<td align="center">單首龍</td> 		<td align="center">鴨嘴火獸</td> 		<td align="center">三蜜蜂</td> 	<td align="center">二星呆殼</td> 
+		</tr>
+		<td>-------</td>
+		<!--2-8  空-->
+		<tr>
+			<td align="center">2-8水曜魚</td>		<td align="center">咩利羊</td> 		<td align="center">大舌貝</td> 	<td align="center"><font color="blue">三星大鋼蛇</font></td> 	<td align="center">卡蒂狗</td>
+			<td align="center">卡蒂狗</td> 	 	<td align="center">好啦魷</td> 			<td align="center">達摩狒狒</td> 	    	<td align="center">六尾</td> 		<td align="center">三蜜蜂</td> 	
+			<td align="center"><font color="blue">三星大嘴娃娃</font></td>  		<td align="center">龍頭地鼠</td> 			<td align="center">花蓓蓓</td>			<td align="center">黏黏寶</td> 		<td align="center">鴨嘴火獸</td> 		
+			<td align="center">飄飄球</td>  		<td align="center">木守宮</td>			<td align="center">雙倍多多冰</td> 	<td align="center">勇士雄鷹</td> 	<td align="center"><font color="blue">三星巨沼</font></td> 	
+			<td align="center">三蜜蜂</td> 		<td align="center">達摩狒狒</td>     		<td align="center">黏黏寶</td>			<td align="center">二星呆殼獸</td> 		<td align="center">電擊獸</td> 
+
+		</tr>
+		<tr>
+ 		 	<td align="center">飄飄球</td> 		<td align="center">電擊獸</td> 		<td align="center">咩利羊</td>      <td align="center"><font color="blue">三星蜥蜴王</font></td>  	<td align="center"><font color="blue">三星呆殼獸</font></td> 	 	<td align="center">二星巨沼</td>	
+			<td align="center"><font color="blue">三星詛咒</font></td>		<td align="center">單首龍</td> 		<td align="center">二星火焰雞</td> 		<td align="center">花蓓蓓</td> 		<td align="center"><font color="blue">三星火焰雞</font></td> 
+			<td align="center">二星蜥蜴王</td> 		<td align="center">雙倍多多冰</td> 		<td align="center">火雉雞</td> 		<td align="center">二星大嘴</td> 		<td align="center">二星大鋼蛇</td> 		
+					<td align="center">二星詛咒</td> 		<td align="center">單首龍</td> 	<td align="center">鯉魚王</td>  <td align="center">鴨嘴火獸</td> 
+			<td align="center">六尾</td> 		<td align="center">二星耿鬼</td> 		<td align="center">勇士雄鷹</td> 		<td align="center">齒輪兒</td> 	<td align="center">喇叭芽</td> 
+		</tr>
+    </div>
+	</table>
+	
+	
+	  <table border="1" width="300" >
+                     <tr>
+                         <td align="center">
+                             序號
+                         </td>
+                          <td align="center">
+                              R
+                          </td>
+                         <td align="center">
+                             L
+                         </td>
+                         <td align="center">
+                             IN
+                         </td>
+                         <td align="center">
+                             OUT
+                         </td>
+                    <tr>
+                        <td width="166">1</td>
+                        <td width="166"><input type="text" id="R1" name="R1" size="20"></td>
+                        <td width="166"><input type="text" id="L1" name="L1" size="20"></td>
+                        <td width="166"><input type="text" id="IN1" name="IN1" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT1" name="OUT1" size="20"></td>
+
+                   </tr>
+                    <tr>
+                        <td width="166">2</td>
+                        <td width="166"><input type="text" id="R2" name="R2" size="20"></td>
+                        <td width="166"><input type="text" id="L2" name="L2" size="20"></td>
+                        <td width="166"><input type="text" id="IN2" name="IN2" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT2" name="OUT2" size="20" ></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">3</td>
+                        <td width="166"><input type="text" id="R3" name="R3" size="20"></td>
+                        <td width="166"><input type="text" id="L3" name="L3" size="20"></td>
+                        <td width="166"><input type="text" id="IN3" name="IN3" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT3" name="OUT3" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">4</td>
+                        <td width="166"><input type="text" id="R4" name="R4" size="20"></td>
+                        <td width="166"><input type="text" id="L4" name="L4" size="20"></td>
+                        <td width="166"><input type="text" id="IN4" name="IN4" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT4" name="OUT4" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">5</td>
+                        <td width="166"><input type="text" id="R5" name="R5" size="20"></td>
+                        <td width="166"><input type="text" id="L5" name="L5" size="20"></td>
+                        <td width="166"><input type="text" id="IN5" name="IN5" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT5" name="OUT5" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">6</td>
+                        <td width="166"><input type="text" id="R6" name="R6" size="20"></td>
+                        <td width="166"><input type="text" id="L6" name="L6" size="20"></td>
+                        <td width="166"><input type="text" id="IN6" name="IN6" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT6" name="OUT6" size="20""></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">7</td>
+                        <td width="166"><input type="text" id="R7" name="R7" size="20"></td>
+                        <td width="166"><input type="text" id="L7" name="L7" size="20"></td>
+                        <td width="166"><input type="text" id="IN7" name="IN7" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT7" name="OUT7" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">8</td>
+                        <td width="166"><input type="text" id="R8" name="R8" size="20"></td>
+                        <td width="166"><input type="text" id="L8" name="L8" size="20"></td>
+                        <td width="166"><input type="text" id="IN8" name="IN8" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT8" name="OUT8" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">9</td>
+                        <td width="166"><input type="text" id="R9" name="R9" size="20"></td>
+                        <td width="166"><input type="text" id="L9" name="L9" size="20"></td>
+                        <td width="166"><input type="text" id="IN9" name="IN9" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT9" name="OUT9" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">10</td>
+                        <td width="166"><input type="text" id="R10" name="R10" size="20"></td>
+                        <td width="166"><input type="text" id="L10" name="L10" size="20"></td>
+                        <td width="166"><input type="text" id="IN10" name="IN10" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT10" name="OUT10" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">11</td>
+                        <td width="166"><input type="text" id="R11" name="R11" size="20"></td>
+                        <td width="166"><input type="text" id="L11" name="L11" size="20"></td>
+                        <td width="166"><input type="text" id="IN11" name="IN11" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT11" name="OUT11" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">12</td>
+                        <td width="166"><input type="text" id="R12" name="R12" size="20"></td>
+                        <td width="166"><input type="text" id="L12" name="L12" size="20"></td>
+                        <td width="166"><input type="text" id="IN12" name="IN12" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT12" name="OUT12" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">13</td>
+                        <td width="166"><input type="text" id="R13" name="R13" size="20"></td>
+                        <td width="166"><input type="text" id="L13" name="L13" size="20"></td>
+                        <td width="166"><input type="text" id="IN13" name="IN13" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT13" name="OUT13" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">14</td>
+                        <td width="166"><input type="text" id="R14" name="R14" size="20"></td>
+                        <td width="166"><input type="text" id="L14" name="L14" size="20"></td>
+                        <td width="166"><input type="text" id="IN14" name="IN14" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT14" name="OUT14" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">15</td>
+                        <td width="166"><input type="text" id="R15" name="R15" size="20"></td>
+                        <td width="166"><input type="text" id="L15" name="L15" size="20"></td>
+                        <td width="166"><input type="text" id="IN15" name="IN15" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT15" name="OUT15" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">16</td>
+                        <td width="166"><input type="text" id="R16" name="R16" size="20"></td>
+                        <td width="166"><input type="text" id="L16" name="L16" size="20"></td>
+                        <td width="166"><input type="text" id="IN16" name="IN16" size="20"  onchange="javascript: OnchangeHeilight();"></td>
+                        <td width="166"><input type="text" id="OUT16" name="OUT16" size="20"></td>
+
+                    </tr>
+                    <tr>
+                        <td width="166">17</td>
+                        <td width="166"><input type="text" id="R17" name="R17" size="20"></td>
+                        <td width="166"><input type="text" id="L17" name="L17" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT17" name="OUT17" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">18</td>
+                        <td width="166"><input type="text" id="R18" name="R18" size="20"></td>
+                        <td width="166"><input type="text" id="L18" name="L18" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT18" name="OUT18" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">19</td>
+                        <td width="166"><input type="text" id="R19" name="R19" size="20"></td>
+                        <td width="166"><input type="text" id="L19" name="L19" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT19" name="OUT19" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">20</td>
+                        <td width="166"><input type="text" id="R20" name="R20" size="20"></td>
+                        <td width="166"><input type="text" id="L20" name="L20" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT20" name="OUT20" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">21</td>
+                        <td width="166"><input type="text" id="R21" name="R21" size="20"></td>
+                        <td width="166"><input type="text" id="L21" name="L21" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT21" name="OUT21" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">22</td>
+                        <td width="166"><input type="text" id="R22" name="R22" size="20"></td>
+                        <td width="166"><input type="text" id="L22" name="L22" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT22" name="OUT22" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">23</td>
+                        <td width="166"><input type="text" id="R23" name="R23" size="20"></td>
+                        <td width="166"><input type="text" id="L23" name="L23" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT23" name="OUT23" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">24</td>
+                        <td width="166"><input type="text" id="R24" name="R24" size="20"></td>
+                        <td width="166"><input type="text" id="L24" name="L24" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT24" name="OUT24" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">25</td>
+                        <td width="166"><input type="text" id="R25" name="R25" size="20"></td>
+                        <td width="166"><input type="text" id="L25" name="L25" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUT25" name="OUT25" size="20"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">KEY1</td>
+                        <td width="166"><input type="text" id="RKEY1" name="RKEY1" size="20"></td>
+                        <td width="166"><input type="text" id="LKEY1" name="LKEY1" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUTKEY1" name="OUTKEY1" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">KEY2</td>
+                        <td width="166"><input type="text" id="RKEY2" name="RKEY2" size="20"></td>
+                        <td width="166"><input type="text" id="LKEY2" name="LKEY2" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUTKEY2" name="OUTKEY2" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">KEY3</td>
+                        <td width="166"><input type="text" id="RKEY3" name="RKEY3" size="20"></td>
+                        <td width="166"><input type="text" id="LKEY3" name="LKEY3" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUTKEY3" name="OUTKEY3" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">KEY4</td>
+                        <td width="166"><input type="text" id="RKEY4" name="RKEY4" size="20"></td>
+                        <td width="166"><input type="text" id="LKEY4" name="LKEY4" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUTKEY4" name="OUTKEY4" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                    </tr>
+                    <tr>
+                        <td width="166">KEY5</td>
+                        <td width="166"><input type="text" id="RKEY5" name="RKEY5" size="20"></td>
+                        <td width="166"><input type="text" id="LKEY5" name="LKEY5" size="20"></td>
+                        <td width="166" align="center">X</td>
+                        <td width="166"><input type="text" id="OUTKEY5" name="OUTKEY5" size="20" onchange="javascript: OnchangeHeilight();"></td>
+                    </tr>
+        
+</table>
+</body>
+</html>
